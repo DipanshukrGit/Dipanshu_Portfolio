@@ -65,7 +65,7 @@ export default function AboutPage() {
       <div className="flex flex-col xl:flex-row items-center xl:items-start space-y-10 xl:space-y-0 xl:space-x-10">
         <div className="about-image w-full xl:w-1/2 flex justify-center">
           <Image
-            src="/images/poperpop.jpg"
+            src="/img/about.jpg"
             alt="Dipanshu Kumar"
             width={400}
             height={520}
