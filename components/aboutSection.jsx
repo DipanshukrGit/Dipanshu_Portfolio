@@ -85,6 +85,16 @@ export default function AboutPage() {
             CGPA: <span className="text-blue-600 font-bold">7.21</span>
           </h1>
 
+           <h1 className="text-lg font-semibold">
+            Indian Institute of Information Technology Ranchi
+            <br />
+            (12th or intermidiate)
+            <br />
+            <span className="text-sm text-gray-500">June 2020 – August 20222</span>
+            <br />
+            CGPA: <span className="text-blue-600 font-bold">76.2%</span>
+          </h1>
+
           <p className="text-base text-gray-700">
             Hi, I’m Dipanshu Kumar, a final year B.Tech student in ECE at IIIT Ranchi.
             I enjoy designing clean and user-friendly UIs with Figma, and turning them into real web apps via full-stack development.
@@ -114,7 +124,7 @@ export default function AboutPage() {
       <div className="experience-box bg-blue-50 border border-blue-200 p-6 rounded-xl shadow-md">
         <h2 className="text-2xl font-bold text-blue-600 mb-4">Experience</h2>
         <h3 className="text-lg font-semibold">Full Stack Developer Intern</h3>
-        <p className="text-sm text-gray-500">Alpixn Technology Pvt. Ltd. | Jan 2024 – Mar 2024</p>
+        <p className="text-sm text-gray-500">Alpixn Technology Pvt. Ltd. | May 2025 – June 2025</p>
         <p className="mt-3 text-gray-700 leading-relaxed">
           Worked on multiple full-stack projects using the MERN stack and TailwindCSS. Built scalable frontend components and integrated backend APIs.
           Gained hands-on experience with deployment pipelines and version control using GitHub.

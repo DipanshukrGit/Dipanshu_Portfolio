@@ -188,7 +188,7 @@ export default function ContactSection() {
             href="https://github.com/DipanshukrGit"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-500"
+            className="hover:text-blue-600"
           >
             <FaGithub />
           </a>
@@ -204,7 +204,7 @@ export default function ContactSection() {
             href="https://instagram.com/dipanshu.kr04"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-pink-600"
+            className="hover:text-blue-600"
           >
             <FaInstagram />
           </a>
@@ -212,7 +212,7 @@ export default function ContactSection() {
             href="https://twitter.com/dipanshu_kr04"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-sky-400"
+            className="hover:text-blue-600"
           >
             <FaTwitter />
           </a>

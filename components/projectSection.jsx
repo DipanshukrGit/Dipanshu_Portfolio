@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { ArrowRight, ExternalLink } from "lucide-react";
-import { FaGithub } from "react-icons/fa"; // ✅ React GitHub icon
+import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -12,10 +12,11 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    title: "MediMeet - Doctor Appointment Platform",
+    description:
+      "A full-stack doctor appointment app with video calling, slot booking, and real-time scheduling using Next.js, Tailwind CSS, Neon DB, and Vonage.",
+    image: "/project/medimeet.png",
+    tags: ["Next.js", "TailwindCSS", "Neon", "Vonage", "Shadcn UI"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -24,7 +25,7 @@ const projects = [
     title: "Orbit Analytics Dashboard",
     description:
       "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
+    image: "/project/medimeet.png",
     tags: ["TypeScript", "D3.js", "Next.js"],
     demoUrl: "#",
     githubUrl: "#",
@@ -34,7 +35,7 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
+    image: "/project/medimeet.png",
     tags: ["React", "Node.js", "Stripe"],
     demoUrl: "#",
     githubUrl: "#",
@@ -86,11 +87,12 @@ export default function ProjectsPage() {
               ref={(el) => (cardsRef.current[index] = el)}
               className="group border rounded-lg overflow-hidden shadow-sm bg-white opacity-0 transform transition-all duration-300 hover:shadow-lg hover:-translate-y-2"
             >
+              {/* ✅ Image Wrapper with relative position */}
               <div className="h-48 relative overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
-                  layout="fill"
+                  fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>

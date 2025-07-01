@@ -21,7 +21,7 @@ export default function Footer() {
 
       {/* Bottom Section */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div className="text-sm text-gray-600">© 2025 All rights reserved</div>
+        <div className="text-sm text-gray-600">Made with 💗 by Dipanshu</div>
         <div className="flex items-center gap-4">
           <a
             href="/Dipanshu_Kumar_CV.pdf"
@@ -35,7 +35,7 @@ export default function Footer() {
               href="https://github.com/DipanshukrGit"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-black hover:text-white transition text-black text-lg"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-blue-600 hover:text-white transition text-black text-lg"
             >
               <FaGithub />
             </a>
@@ -49,7 +49,7 @@ export default function Footer() {
             </a>
             <a
               href="mailto:dipanshuhub0411@gmail.com"
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-red-500 hover:text-white transition text-black text-lg"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 hover:bg-blue-600 hover:text-white transition text-black text-lg"
             >
               <FaEnvelope />
             </a>
