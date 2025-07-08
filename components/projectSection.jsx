@@ -6,6 +6,7 @@ import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Card, CardContent } from "@/components/ui/card";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,28 +16,29 @@ const projects = [
     title: "MediMeet - Doctor Appointment Platform",
     description:
       "A full-stack doctor appointment app with video calling, slot booking, and real-time scheduling using Next.js, Tailwind CSS, Neon DB, and Vonage.",
-    image: "/project/medimeet.png",
+    image: "/project/project2.png",
     tags: ["Next.js", "TailwindCSS", "Neon", "Vonage", "Shadcn UI"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl:
+      "https://medimeet-telemedicine-video-consultation-platform.vercel.app/",
+    githubUrl: "https://github.com/DipanshukrGit/MediMeet",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "DriveLux – AI Car Marketplace",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/project/medimeet.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "An AI-powered car marketplace that lets users explore and purchase premium vehicles through image-based search, personalized recommendations, and a seamless browsing experience.",
+    image: "/project/project1.png",
+    tags: ["Next.js", "Google Gemini AI", "Supabase", "Tailwind CSS"],
+    demoUrl: "https://trimrr-coral.vercel.app/",
+    githubUrl: "https://github.com/DipanshukrGit/DriveLux",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Webyansh",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/project/medimeet.png",
-    tags: ["React", "Node.js", "Stripe"],
+      "A scalable e-commerce platform featuring secure user authentication, dynamic product listings, and seamless Stripe payment integration.",
+    image: "/project/project3.png",
+    tags: ["Next.js", "Tailwind CSS", "Stripe", "MongoDB", "JWT"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -74,7 +76,8 @@ export default function ProjectsPage() {
         </h2>
 
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Some of the recent work I've done, focusing on UI, performance, and full-stack development.
+          Some of the recent work I've done, focusing on UI, performance, and
+          full-stack development.
         </p>
 
         <div
@@ -82,22 +85,22 @@ export default function ProjectsPage() {
           className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
         >
           {projects.map((project, index) => (
-            <div
+            <Card
               key={project.id}
               ref={(el) => (cardsRef.current[index] = el)}
-              className="group border rounded-lg overflow-hidden shadow-sm bg-white opacity-0 transform transition-all duration-300 hover:shadow-lg hover:-translate-y-2"
+              className="group opacity-0 transform transition-all duration-300 p-0 border border-gray-200 hover:-translate-y-2 hover:bg-zinc-50 hover:shadow-lg hover:border-blue-500"
             >
-              {/* ✅ Image Wrapper with relative position */}
-              <div className="h-48 relative overflow-hidden">
+              <div className="w-full h-48 relative overflow-hidden rounded-t-lg">
                 <Image
                   src={project.image}
                   alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  width={400}
+                  height={250}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 
-              <div className="p-5">
+              <CardContent className="p-5">
                 <div className="flex flex-wrap gap-2 mb-3">
                   {project.tags.map((tag, i) => (
                     <span
@@ -113,7 +116,9 @@ export default function ProjectsPage() {
                   {project.title}
                 </h3>
 
-                <p className="text-sm text-gray-600 mb-4">{project.description}</p>
+                <p className="text-sm text-gray-600 mb-4">
+                  {project.description}
+                </p>
 
                 <div className="flex space-x-4">
                   <a
@@ -133,8 +138,8 @@ export default function ProjectsPage() {
                     <FaGithub size={18} />
                   </a>
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
 
@@ -144,7 +149,9 @@ export default function ProjectsPage() {
             target="_blank"
             className="inline-flex items-center gap-2 text-blue-600 hover:underline font-medium"
           >
-            Check My Github <ArrowRight size={16} />
+            <FaGithub size={18} />
+            Visit My GitHub Profile
+            <ArrowRight size={16} />
           </a>
         </div>
       </div>

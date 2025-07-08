@@ -21,14 +21,14 @@ export default function Footer() {
 
       {/* Bottom Section */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div className="text-sm text-gray-600">Made with 💗 by Dipanshu</div>
+        <div className="text-sm text-gray-600"> Designed with purpose. Developed with 💖.</div>
         <div className="flex items-center gap-4">
           <a
             href="/Dipanshu_Kumar_CV.pdf"
             download
             className="px-4 py-2 border border-blue-600 text-blue-600 rounded-full text-sm transition hover:bg-blue-600 hover:text-white"
           >
-            Download CV
+           Download Resume
           </a>
           <div className="flex gap-3">
             <a

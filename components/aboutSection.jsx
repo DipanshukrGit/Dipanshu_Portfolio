@@ -74,36 +74,22 @@ export default function AboutPage() {
         </div>
 
         <div className="about-text xl:w-1/2 space-y-4">
-          <h4 className="text-3xl font-bold text-blue-600">About</h4>
-          <h1 className="text-lg font-semibold">
-            Indian Institute of Information Technology Ranchi
-            <br />
-            (Electronics and Communication Engineering)
-            <br />
-            <span className="text-sm text-gray-500">Nov 2022 – July 2026</span>
-            <br />
-            CGPA: <span className="text-blue-600 font-bold">7.21</span>
-          </h1>
+          <h4 className="text-3xl font-bold text-blue-600">About Me</h4>
 
-           <h1 className="text-lg font-semibold">
-            Indian Institute of Information Technology Ranchi
-            <br />
-            (12th or intermidiate)
-            <br />
-            <span className="text-sm text-gray-500">June 2020 – August 20222</span>
-            <br />
-            CGPA: <span className="text-blue-600 font-bold">76.2%</span>
-          </h1>
+          <ul className="space-y-2 text-base text-gray-700">
+            <li>
+              🎓 <strong>Indian Institute of Information Technology Ranchi <br/>(B.Tech, Electronics and Communication Engineering)</strong><br />
+              November 2022 – July 2026 | CGPA: <span className="text-blue-600 font-bold">7.17/ 10</span>
+            </li>
+            <li>
+              🏫 <strong>Central Karimia +2 High School,Jamshedpur(Class XII)</strong><br />
+              April 2020 – March 2022 | <span className="text-blue-600 font-bold">8.0/10</span>
+            </li>
+          
+          </ul>
 
-          <p className="text-base text-gray-700">
-            Hi, I’m Dipanshu Kumar, a final year B.Tech student in ECE at IIIT Ranchi.
-            I enjoy designing clean and user-friendly UIs with Figma, and turning them into real web apps via full-stack development.
-            I also actively code in C++ for DSA and problem-solving.
-          </p>
-
-          <p className="text-base text-gray-700">
-            I’m passionate about building real-world products that combine great design with functionality.
-            I’m open to collaboration and love connecting with like-minded people.
+          <p className="text-base text-gray-700 mt-4">
+            I’m a final-year Electronics and Communication Engineering student at Indian Institute of Information Technology Ranchi. I love building performant and elegant full-stack applications, working with scalable systems, and continuously exploring new tools and frameworks.
           </p>
 
           <h2 className="text-2xl font-semibold text-blue-600 mt-6">My Tech Stack</h2>
@@ -123,13 +109,24 @@ export default function AboutPage() {
       {/* Experience Section */}
       <div className="experience-box bg-blue-50 border border-blue-200 p-6 rounded-xl shadow-md">
         <h2 className="text-2xl font-bold text-blue-600 mb-4">Experience</h2>
+
         <h3 className="text-lg font-semibold">Full Stack Developer Intern</h3>
-        <p className="text-sm text-gray-500">Alpixn Technology Pvt. Ltd. | May 2025 – June 2025</p>
-        <p className="mt-3 text-gray-700 leading-relaxed">
-          Worked on multiple full-stack projects using the MERN stack and TailwindCSS. Built scalable frontend components and integrated backend APIs.
-          Gained hands-on experience with deployment pipelines and version control using GitHub.
-          Also participated in daily stand-ups and agile sprints, collaborating directly with senior developers and designers.
-        </p>
+        <p className="text-sm text-gray-500">Alpixn Technology Pvt. Ltd. | Remote | May 2025 – July 2025</p>
+
+        <ul className="list-disc pl-5 mt-3 text-gray-700 space-y-2 leading-relaxed">
+          <li>
+            Built 100% responsive, pixel-perfect frontend from Figma designs using <strong>Next.js 14</strong>, <strong>Tailwind CSS</strong>, and <strong>TypeScript</strong>, with smooth Dark/Light mode toggle (20% faster theme switching).
+          </li>
+          <li>
+            Boosted UI interactivity by 15% using <strong>GSAP animations</strong> and <strong>shadcn/ui components</strong>, delivering a modern and engaging experience.
+          </li>
+          <li>
+            Created secure <strong>RESTful APIs</strong> using <strong>Node.js</strong> and <strong>Express</strong>, and built SEO-optimized, accessible components, improving page performance by 30%.
+          </li>
+          <li>
+            Improved clarity and navigation by redesigning page flow — users started exploring 35% more content, leading to higher product understanding and session time.
+          </li>
+        </ul>
       </div>
     </section>
   );

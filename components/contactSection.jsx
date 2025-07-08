@@ -128,12 +128,13 @@ export default function ContactSection() {
               onEnded={() => setVideoEnded(true)}
             />
           ) : (
-            <form
-              ref={formRef}
-              action="https://getform.io/f/aronrkrb"
-              method="POST"
-              className="space-y-6 bg-white dark:bg-zinc-900 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700"
-            >
+          <form
+  ref={formRef}
+  action={process.env.NEXT_PUBLIC_GETFORM_URL}
+  method="POST"
+  className="space-y-6 bg-white dark:bg-zinc-900 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700"
+>
+
               <div ref={(el) => (formFieldsRef.current[0] = el)}>
                 <label className="block text-sm font-semibold mb-1 text-gray-700 dark:text-gray-200">Name</label>
                 <input
