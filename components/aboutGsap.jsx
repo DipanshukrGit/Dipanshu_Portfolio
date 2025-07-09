@@ -35,7 +35,7 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <div className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 overflow-hidden flex p-[1vw] z-10 relative">
+    <div className="hidden sm:flex w-full bg-gradient-to-r from-cyan-500 to-blue-500 overflow-hidden p-[1vw] z-10 relative">
       {Array(5)
         .fill(0)
         .map((_, i) => (
