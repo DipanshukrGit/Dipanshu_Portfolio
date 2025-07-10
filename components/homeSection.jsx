@@ -75,7 +75,7 @@ export default function HomeSection() {
                 asChild
                 className="resume-button bg-white border-2 border-blue-600 text-blue-600 rounded-xl px-6 py-3 text-base md:text-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md"
               >
-                <a href="#" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="https://drive.google.com/file/d/1lLLHUI1KaE1zCxImB_imoh5kAjDnYL9M/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
               </Button>
             </div>
 
