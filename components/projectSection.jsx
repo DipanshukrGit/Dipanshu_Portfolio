@@ -29,7 +29,7 @@ const projects = [
       "An AI-powered car marketplace that lets users explore and purchase premium vehicles through image-based search, personalized recommendations, and a seamless browsing experience.",
     image: "/project/project1.png",
     tags: ["Next.js", "Google Gemini AI", "Supabase", "Tailwind CSS"],
-    demoUrl: "https://trimrr-coral.vercel.app/",
+    demoUrl: "https://drive-lux.vercel.app/",
     githubUrl: "https://github.com/DipanshukrGit/DriveLux",
   },
   {
